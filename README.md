@@ -20,14 +20,14 @@ Deployed in AWS EC2 directly from local environment by puttygen
 	11) Disable Instance
 
 ### Deployment main files:
-		app.py
-		MLDemoTesting.pem (This req to generate .ppk file)
-		MLDemoTesting.ppk
-		model.pkl
-		procfile
-		requirements.txt
-		templates folder with home.html
-		static folder with css folder with style file (Depends)
+ 	app.py
+ 	MLDemoTesting.pem (This req to generate .ppk file)
+ 	MLDemoTesting.ppk
+ 	model.pkl
+ 	procfile
+ 	requirements.txt
+ 	templates folder with home.html
+ 	static folder with css folder with style file (Depends)
 
 
 1) Login to AWS --> Search EC2 (Its a virtual server in cloude)--> Running Instance --> Launch Instance
