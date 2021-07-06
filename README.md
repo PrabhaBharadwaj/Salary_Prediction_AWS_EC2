@@ -1,5 +1,10 @@
-
 # Deployed in AWS EC2
+Here codes are deployed in ASW EC2 via puttygen
+
+## Salary_Prediction
+This is a demo project to elaborate how Machine Learn Models are deployed on production using Flask API.
+
+
 
 ### High level steps:
 	1) Flask Code
