@@ -17,7 +17,7 @@ Deployed in AWS EC2 directly from local environment by puttygen
 	8) Install the libraries by connecting through Putty
 	9) Run python3 app.py in putty
 	10. Execution URL/Web url from EC2 instance and verify it.
-11) Disable Instance
+	11) Disable Instance
 
 ### Deployment main files:
 		app.py
@@ -57,12 +57,14 @@ Deployed in AWS EC2 directly from local environment by puttygen
 	--> Now select Create
 
 4) Now we need to link this security group to EC2:
+###
 	Goto --> Networks & Security --> Networks Interfaces --> Right click on 1st interface id --> Select "Change security group"
 		--> In Associated security groups selct "FullAccess" Named newly created security Group --> Save
 		--> Now we can see security groups as "FullAccess" 
 
 
 5) In Puttygen: To create Private Key using pem file
+###
 	--> Convert .ppk version 3 to 2 , else it will fail later(One time)
 		Inside Puttygen --> Key -->Parameter for saving Keys  -->vesrion change 3 to 2
 		
@@ -71,10 +73,12 @@ Deployed in AWS EC2 directly from local environment by puttygen
 		--> Give name as 'MLDemoTesting' and provide our location--> It saves from pem file as .ppk fileSave Private key in .ppk  (This is a privatekey)
 
 6) In EC2 Copy the Public DNS:
+###
 	--> Now goto EC2 instance newly created(Testprabha) instance --> ActionS --> Connect  ( to your instance, there we will get out winscp required hostname. Which is Public DNS)
 		--> In 'SSH Client' tab copy Hostname / (Connect to your instance using its Public DNS:) ec2-13-229-242-115.ap-southeast-1.compute.amazonaws.com
 
 7) Connect to EC2 via Winscp:
+###
 	--> Winscp helps to deploy code in EC2 instance just like connecting to server and drag and drop
 
 	-->Inside Winscp Copy above Public DNS as Hostname here -->Username Default as 'ubuntu' --> in  Advanced select Authentication-->
@@ -90,6 +94,7 @@ Deployed in AWS EC2 directly from local environment by puttygen
 		folder: templates
 
 8) Connect to EC2 via putty:
+###
 	--> Copy above Public DNS as Hostname here --> Type "MLDemoTest" as saved session and save
 	--> Goto SSH -->Goto Auth --> Privatekeyfor authantication select "MLDemoTest.ppk" ---> Press Open
 	--> Now putty Command Prompt opens --> Type 'ubuntu' as login as
@@ -113,6 +118,7 @@ Deployed in AWS EC2 directly from local environment by puttygen
 
 11) EC2 Deployed and checking via URL
 	In our instance Status check shows as passed
+	###
 	select our instance -->Connect --> There we will get our URL(Public DNS)  ec2-13-229-242-115.ap-southeast-1.compute.amazonaws.com
 	
 	URL:
